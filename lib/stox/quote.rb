@@ -1,3 +1,5 @@
+require 'stock_quote'
+
 module Stox
   class Quote
     def get(symbol="KO")
