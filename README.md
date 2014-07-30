@@ -1,6 +1,6 @@
 # Stox
 
-TODO: Write a gem description
+Get instant realtime stock quotes from your terminal. Because you're a nerd.
 
 ## Installation
 
