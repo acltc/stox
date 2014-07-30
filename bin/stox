@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
-require_relative "../lib/stox/quote.rb"
+require_relative "../lib/stox/quote"
 
-quote = Stox::Quote.new
-quote.get
+symbol = ARGV[0]
+
+quote = Stox::Quote.new(symbol)
