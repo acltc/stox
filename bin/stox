@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
+require 'stock_quote'
 symbol = ARGV[0]
 
 bid = StockQuote::Stock.quote(symbol).bid_realtime
