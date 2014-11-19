@@ -4,4 +4,5 @@ require_relative "../lib/stox/quote"
 
 symbol = ARGV[0]
 
-quote = Stox::Quote.new(symbol)
+price = Stox::Quote.new(symbol).price
+puts "The realtime bid for #{symbol.upcase} is $#{price}!"

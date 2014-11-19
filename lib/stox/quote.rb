@@ -2,9 +2,12 @@ require 'stock_quote'
 
 module Stox
   class Quote
+
+    attr_reader :price
+
     def initialize(symbol)
-      bid = StockQuote::Stock.quote(symbol).bid_realtime
-      puts "The realtime bid for #{symbol.upcase} is $#{bid}!"
+      @price = StockQuote::Stock.quote(symbol).bid_realtime
     end
+
   end
 end
